@@ -123,6 +123,7 @@
       <HintPath>packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.IdentityModel" />
     <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.20622.1351, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\System.IdentityModel.Tokens.Jwt.4.0.2.206221351\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
@@ -202,6 +203,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\UserConfiguration.cs" />
+    <Compile Include="Migrations\VideoConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Server\ApiConfiguration.cs" />
     <Compile Include="Server\Auth\JwtOptions.cs" />
@@ -211,9 +214,11 @@
     <Compile Include="Server\Config\AppConfiguration.cs" />
     <Compile Include="Server\Controllers\AccountController.cs" />
     <Compile Include="Server\Controllers\BookController.cs" />
+    <Compile Include="Server\Controllers\CollectionController.cs" />
     <Compile Include="Server\Controllers\ConferenceController.cs" />
     <Compile Include="Server\Controllers\PlaylistController.cs" />
     <Compile Include="Server\Controllers\ProfileController.cs" />
+    <Compile Include="Server\Controllers\SearchController.cs" />
     <Compile Include="Server\Controllers\VideoController.cs" />
     <Compile Include="Server\Controllers\WatchHistoryController.cs" />
     <Compile Include="Server\Data\Contracts\IVideoOnDemandContext.cs" />
@@ -230,16 +235,21 @@
     <Compile Include="Server\Models\Account.cs" />
     <Compile Include="Server\Models\BaseEntity.cs" />
     <Compile Include="Server\Models\Book.cs" />
+    <Compile Include="Server\Models\Collection.cs" />
+    <Compile Include="Server\Models\Collections.cs" />
     <Compile Include="Server\Models\Conference.cs" />
     <Compile Include="Server\Models\Group.cs" />
     <Compile Include="Server\Models\ILoggable.cs" />
     <Compile Include="Server\Models\Playlist.cs" />
     <Compile Include="Server\Models\Profile.cs" />
     <Compile Include="Server\Models\Role.cs" />
+    <Compile Include="Server\Models\SearchResultItem.cs" />
+    <Compile Include="Server\Models\SearchResults.cs" />
     <Compile Include="Server\Models\Session.cs" />
     <Compile Include="Server\Models\Tenant.cs" />
     <Compile Include="Server\Models\User.cs" />
     <Compile Include="Server\Models\Video.cs" />
+    <Compile Include="Server\Models\VideoProviderType.cs" />
     <Compile Include="Server\Models\WatchHistory.cs" />
     <Compile Include="Server\Models\WatchHistoryItem.cs" />
     <Compile Include="Server\Services\BaseService.cs" />

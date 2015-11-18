@@ -23,6 +23,8 @@ namespace VideoOnDemandApi.Server.Data
 
         public IRepository<Session> Sessions { get { return GetStandardRepo<Session>(); } }
 
+        public IRepository<Video> Videos { get { return GetStandardRepo<Video>(); } }
+
         public void SaveChanges()
         {
             

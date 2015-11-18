@@ -30,5 +30,7 @@ namespace VideoOnDemandApi.Server.Data
 
         public DbSet<Session> Sessions { get; set; }
 
+        public DbSet<Video> Videos { get; set; }
+
     }
 }

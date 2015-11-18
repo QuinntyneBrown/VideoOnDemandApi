@@ -13,6 +13,8 @@ namespace VideoOnDemandApi.Server.Data.Contracts
 
         IRepository<Session> Sessions { get; }
 
+        IRepository<Video> Videos { get; }
+
         void SaveChanges();
     }
 }
